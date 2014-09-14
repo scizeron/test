@@ -1,4 +1,4 @@
-rest-controller : problems with @EnableAspectJAutoProxy ,@Aspect and @RestController. If the @Aspect wraps the controller, the dynamic proxy is not mapped
+rest-controller : problems with @EnableAspectJAutoProxy, @Aspect and @RestController. If the @Aspect wraps the controller, the dynamic proxy is not mapped
 
 1 - The @Aspect is disabled, everyting is ok.
 
@@ -23,4 +23,4 @@ Status Code:404 Not Found
 The server logs shows no more mapping for my controller and the previous request is failed.
 
 
-
+3 - Use proxyTargetClass=true, in this case the proxy will contain the @RestController annotation and the mapping will be ok.
