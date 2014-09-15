@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Aspect
-//@Component
+@Component
 public class MyAspect {
   
   @Around("@annotation(requestMapping)")
