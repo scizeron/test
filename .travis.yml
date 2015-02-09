@@ -1,4 +1,6 @@
 language: java
+jdk:
+ - oraclejdk7
 before_install: cd rest-controller
 script: mvn clean install
 after_script: cd ..
